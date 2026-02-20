@@ -13,7 +13,7 @@
 
 - Java 17 或更高版本
 - Paper/Spigot 1.20.4 服务器
-- **仅支持 Linux ARM64 平台**（依赖 JavaCV ARM64 版本）
+
 
 ## 安装步骤
 
