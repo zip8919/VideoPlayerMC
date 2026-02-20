@@ -1,0 +1,34 @@
+name: VideoPlayerMC
+version: 1.0.0
+main: com.videoplayermc.VideoPlayerMC
+api-version: 1.20
+author: iFlow
+description: Play videos in Minecraft using concrete blocks
+
+commands:
+  playvideo:
+    description: Play a video at specified coordinates (deprecated, use playfile)
+    usage: /playvideo <video> <x> <y> <z>
+    permission: videoplayermc.play
+    aliases: [pv]
+
+  processvideo:
+    description: Process a video file for fast playback
+    usage: /processvideo <video> [name]
+    permission: videoplayermc.process
+    aliases: [proc]
+
+  playfile:
+    description: Play a pre-processed video file
+    usage: /playfile <name> <x> <y> <z>
+    permission: videoplayermc.play
+    aliases: [pf]
+
+permissions:
+  videoplayermc.play:
+    description: Allows playing videos
+    default: true
+
+  videoplayermc.process:
+    description: Allows processing videos
+    default: true
